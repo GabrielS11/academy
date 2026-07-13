@@ -33,9 +33,6 @@ jobs:
     - name: Build Docker image
       run: docker build . --file Dockerfile --tag academy:$(date +%s)
 
-    - name: List Docker images
-      run: docker image ls
-
     - name: Hello
       uses: ./.github/actions/maven_build
 
@@ -45,3 +42,10 @@ jobs:
       with:
         image_name: "academy"
         tag_name: "my-custom-tag"
+
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Docker images
+        run: docker image ls
