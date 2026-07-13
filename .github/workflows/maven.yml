@@ -44,7 +44,7 @@ jobs:
         tag_name: "my-custom-tag"
 
 
-  build:
+  list-images:
     runs-on: ubuntu-latest
     steps:
       - name: List Docker images
