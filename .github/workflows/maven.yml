@@ -36,5 +36,5 @@ jobs:
     - name: List Docker images
       run: docker image ls
 
-    - name: 'Hello'
+    - name: Hello
       uses: ./github/actions/maven_build
