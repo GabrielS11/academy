@@ -38,3 +38,9 @@ jobs:
 
     - name: Hello
       uses: ./.github/actions/maven_build
+
+
+    - name: Build Docker image with inputs
+      uses: ./.github/actions/docker_build
+      with:
+        replace_with_your_input_name: "Replace-With-Your-Input-Value"
