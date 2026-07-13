@@ -43,4 +43,5 @@ jobs:
     - name: Build Docker image with inputs
       uses: ./.github/actions/docker_build
       with:
-        replace_with_your_input_name: "Replace-With-Your-Input-Value"
+        image_name: "academy"
+        tag_name: "my-custom-tag"
